@@ -1,0 +1,60 @@
+.card {
+  position: relative;
+  width: 280px;
+  background: white;
+  border-radius: 14px;
+  padding: 15px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.desc {
+  color: #555;
+  font-size: 14px;
+  height: 38px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.like {
+  right: 45px;
+}
+
+.delete {
+  right: 10px;
+  color: rgb(230, 40, 40);
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
