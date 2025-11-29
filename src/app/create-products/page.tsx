@@ -18,7 +18,7 @@ interface FormState {
   title: string;
   description: string;
   image: string;
-  price: string; // строка → потом преобразуем в number
+  price: string; 
 }
 
 export default function CreateProduct() {
@@ -32,7 +32,7 @@ export default function CreateProduct() {
     price: "",
   });
 
-  // 🟦 типизированный обработчик без ошибок TS
+ 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -44,7 +44,7 @@ export default function CreateProduct() {
     }));
   };
 
-  // 🟦 сабмит формы
+  
   const submit = (e: FormEvent) => {
     e.preventDefault();
 

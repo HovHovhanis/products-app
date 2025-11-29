@@ -21,14 +21,14 @@ export default function ProductsPage() {
 
   const PER_PAGE = 8;
 
-  // 🟦 подгружаем продукты
+ 
   useEffect(() => {
     if (products.length === 0) fetchProducts();
   }, [fetchProducts, products.length]);
 
   if (loading) return <div className={styles.loading}>Загрузка...</div>;
 
-  // 🟦 фильтрация
+
   let list: Product[] = [...products];
 
   if (filter === "favorites") {
@@ -41,7 +41,7 @@ export default function ProductsPage() {
     );
   }
 
-  // 🟦 пагинация
+
   const totalPages = Math.ceil(list.length / PER_PAGE);
   const start = (page - 1) * PER_PAGE;
   const paginated = list.slice(start, start + PER_PAGE);
